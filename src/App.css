@@ -1,0 +1,358 @@
+/* Fondo general y fuente del sitio */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.mantenimiento-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Título principal */
+.mantenimiento-card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #222;
+}
+
+/* Subtítulos */
+.mantenimiento-card h2 {
+    margin-top: 30px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+/* Botones generales */
+.mantenimiento-card button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+/* Botón de inicio */
+.mantenimiento-card .inicio-button {
+    background-color: #4CAF50;
+    margin-right: 10px;
+}
+
+.mantenimiento-card .inicio-button:hover {
+    background-color: #43a047;
+}
+
+/* Botón de fin */
+.mantenimiento-card .fin-button {
+    background-color: #f44336;
+}
+
+.mantenimiento-card .fin-button:hover {
+    background-color: #e53935;
+}
+
+/* Botones guardar/cancelar si los usas */
+.mantenimiento-card .guardar-button {
+    background-color: #4CAF50;
+    margin-right: 5px;
+}
+
+.mantenimiento-card .guardar-button:hover {
+    background-color: #43a047;
+}
+
+.mantenimiento-card .cancelar-button {
+    background-color: #f44336;
+}
+
+.mantenimiento-card .cancelar-button:hover {
+    background-color: #e53935;
+}
+
+/* Botón de editar */
+.mantenimiento-card .editar-button {
+    background-color: #2196F3;
+    margin-left: 10px;
+}
+
+.mantenimiento-card .editar-button:hover {
+    background-color: #1976d2;
+}
+
+/* Mensaje de error */
+.mantenimiento-card .error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+/* Inputs y textareas */
+.mantenimiento-card input,
+.mantenimiento-card textarea {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.mantenimiento-card textarea {
+    resize: vertical;
+}
+
+/* Listas */
+.mantenimiento-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.mantenimiento-card li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #3f51b5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mantenimiento-card .agregar-button {
+    background-color: #673ab7;
+    margin-top: 5px;
+}
+
+.mantenimiento-card .agregar-button:hover {
+    background-color: #5e35b1;
+}
+
+.mantenimiento-card .actividad-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    list-style: none;
+}
+
+.mantenimiento-card .actividad-header {
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mantenimiento-card .actividad-header:hover {
+    background-color: #e0e0e0;
+}
+
+.mantenimiento-card .actividad-detalles {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+/* App.css */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffebee;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+}
+
+.input-file {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estado de actividades */
+.estado-actividades-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 2px solid #eee;
+}
+
+.estadisticas-generales {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.estadistica-item {
+    background: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 0.5rem;
+    min-width: 120px;
+    text-align: center;
+}
+
+.estadistica-label {
+    font-weight: bold;
+    display: block;
+}
+
+.estadistica-valor {
+    font-size: 1.2rem;
+}
+
+.mantenimiento-estadisticas {
+    margin-bottom: 2rem;
+}
+
+.mantenimiento-estadistica-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.3s ease;
+}
+
+.estadisticas-detalle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.actividades-detalle {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.actividad-item {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border-left: 4px solid #ddd;
+}
+
+.actividad-item.completada {
+    border-left-color: #4caf50;
+    background: #e8f5e9;
+}
+
+.actividad-item.en-progreso {
+    border-left-color: #ff9800;
+    background: #fff3e0;
+}
+
+.actividad-item.pendiente {
+    border-left-color: #f44336;
+    background: #ffebee;
+}
+
+.estado-badge {
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.estado-badge.completada {
+    background: #4caf50;
+}
+
+.estado-badge.en-progreso {
+    background: #ff9800;
+}
+
+.estado-badge.pendiente {
+    background: #f44336;
+}
+
+.refresh-button {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.refresh-button:hover {
+    background: #0d8bf2;
+}
