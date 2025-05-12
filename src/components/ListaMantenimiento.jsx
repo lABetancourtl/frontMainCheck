@@ -8,7 +8,7 @@ export function ListaMantenimiento() {
     useEffect(() => {
         async function fetchMantenimientos() {
             try {
-                const response = await fetch('hhttps://backmaincheck.onrender.com/tasks/api/v1/mantenimiento/');
+                const response = await fetch('https://backmaincheck.onrender.com/tasks/api/v1/mantenimiento/');
                 if (!response.ok) {
                     throw new Error('Error al obtener los mantenimientos');
                 }
