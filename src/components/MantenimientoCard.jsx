@@ -43,7 +43,7 @@ export function MantenimientoCard({
             setLoading(true);
             const fechaInicio = new Date().toISOString();
 
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/actividades/${actividadId}/inicio-fin/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/actividades/${actividadId}/inicio-fin/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export function MantenimientoCard({
             setLoading(true);
             const fechaFin = new Date().toISOString();
 
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/actividades/${actividadId}/inicio-fin/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/actividades/${actividadId}/inicio-fin/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ export function MantenimientoCard({
     const registrarInicio = async () => {
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/mantenimientos/${id}/inicio-fin/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/mantenimientos/${id}/inicio-fin/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ export function MantenimientoCard({
     const registrarFin = async () => {
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/mantenimientos/${id}/inicio-fin/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/mantenimientos/${id}/inicio-fin/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ export function MantenimientoCard({
         }
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/mantenimientos/${id}/observaciones/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/mantenimientos/${id}/observaciones/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -193,7 +193,7 @@ export function MantenimientoCard({
     const editarObservacionMantenimiento = async (observacionId, nuevoTexto) => {
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/observaciones/${observacionId}/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/observaciones/${observacionId}/`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -226,7 +226,7 @@ export function MantenimientoCard({
         }
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/actividades/${actividadId}/observaciones/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/actividades/${actividadId}/observaciones/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -256,7 +256,7 @@ export function MantenimientoCard({
     const editarObservacionActividad = async (actividadId, observacionId, nuevoTexto) => {
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:8000/tasks/api/v1/actividades/${actividadId}/observaciones/${observacionId}/`, {
+            const response = await fetch(`https://backmaincheck.onrender.com/tasks/tasks/api/v1/actividades/${actividadId}/observaciones/${observacionId}/`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
